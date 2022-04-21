@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Courier+Prime&family=Patrick+Hand&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Comfortaa", cursive;
+}
+
+body{
+  background-color: #f7dc6f;
+}
+
+#emi_calculator h1 {
+  text-align: center;
+  font-family: "Patrick Hand", cursive;
+  font-size: 40px;
+}
+
+#emi_calculator hr{
+  margin: 10px auto;
+}
+
+#emi_calculator {
+  margin: auto;
+}
+
+#emi_calculator form {
+  margin: 5px;
+}
+
+#emi_calculator form .labelInput {
+  margin: 5px auto;
+  width: 60%;
+  font-weight: 600;
+}
+
+#emi_calculator form .labelInput input {
+  width: 100%;
+  font-family: "Courier Prime", monospace;
+  font-size: 18px;
+  padding: 2px;
+  line-height: 1.5;
+  margin-top: 5px;
+}
+
+#emi_calculator form input[type="button"] {
+  font-family: "Courier Prime", monospace;
+  font-size: 18px;
+  padding: 5px 15px 5px 15px;
+  cursor: pointer;
+}
+
+#emi_calculator form .button_group {
+  text-align: center;
+}
+
+#emi_calculator #extra_info {
+  /* border: 1px solid #40e0d0; */
+  font-weight: 600;
+  padding: 5px;
+  box-shadow: 1px 1px 1px 2px #dcbc65;
+  width: 70%;
+  margin: 15px auto;
+}
+
+#emi_calculator #extra_info p {
+  margin: 5px auto;
+  text-align: center;
+}
+
+footer {
+  background: #000;
+  color: #fff;
+  text-align: center;
+  font-weight: 600;
+}
+
+footer p {
+  padding: 5px;
+}
+
+footer p a {
+  color: #40e0d0;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}

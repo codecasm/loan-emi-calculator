@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Loan EMI Calculator</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/myStyle.css" />
+    <script src="js/EMIscript.js"></script>
+  </head>
+  <body>
+    <script
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6720556788276852"
+      crossorigin="anonymous"
+    ></script>
+
+    <section id="emi_calculator">
+      <h1>EMI Calculator</h1>
+      <hr />
+      <form name="emi_form">
+        <div class="labelInput">
+          <label for="lblLoanAmount">Loan Amount (&#8377;):</label><br />
+          <input
+            type="number"
+            id="loan_amount"
+            placeholder="Enter Loan amount.."
+            min="0"
+            max="10000000"
+          />
+        </div>
+
+        <div class="labelInput">
+          <label for="lblInterestRate">Interest Rate (%):</label><br />
+          <input
+            type="number"
+            id="interest_per_year"
+            placeholder="Enter interest rate per year.."
+            min="0"
+            max="100"
+          />
+        </div>
+
+        <div class="labelInput">
+          <label for="lblLoanDuration">Loan Duration (in Months):</label><br />
+          <input
+            type="number"
+            id="loan_duration"
+            placeholder="Enter loan duration in months.."
+            min="1"
+            max="1200"
+          />
+        </div>
+
+        <div class="button_group">
+          <input type="button" value="Calculate" onclick="calculate()" />
+          <input type="button" value="Reset" onclick="reset()" />
+        </div>
+      </form>
+
+      <div id="extra_info" style="display: none">
+        <p>Monthly Interest: <span id="monthly_interest"></span></p>
+        <p>Monthly Payment: <span id="monthly_payment"></span></p>
+        <p>Total Repayment: <span id="total_repayment"></span></p>
+        <p>Total Interest Cost: <span id="total_interest"></span></p>
+      </div>
+    </section>
+
+    <footer>
+      <p>
+        Made with <span>♥</span> | Template by
+        <a href="https://codecasm.com" target="_blank">CodeCasm</a>
+      </p>
+    </footer>
+  </body>
+</html>
